@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+<?php require_once "check-login.php"; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,8 +31,20 @@
           <div class="user-panel">
             <div class="pull-left image"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
             <div class="pull-left info">
-              <p>John Doe</p>
-              <p class="designation">Frontend Developer</p>
+              <p><?php echo $_SESSION["nameuser"]?></p>
+              <p class="designation"><?php switch ($_SESSION["Chucvu"])
+                {
+                  case 0:
+                    echo "Admin";
+                     break;
+                  case 1:
+                    echo "Editor";
+                    break;
+                  case 2:
+                    echo "User";
+                    break;
+                }; ?>
+              </p>
             </div>
           </div>
           <!-- Menu Trái-->
@@ -40,18 +54,6 @@
         </section>
       </aside>
       <div class="content-wrapper">
-        <div class="page-title">
-          <div>
-            <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
-            <p>A free and modular admin template</p>
-          </div>
-          <div>
-            <ul class="breadcrumb">
-              <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="#">Dashboard</a></li>
-            </ul>
-          </div>
-        </div>
         <div class="row">
           <div class="col-md-12">
           </div>

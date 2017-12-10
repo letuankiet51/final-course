@@ -10,7 +10,7 @@
     $image = $_POST["image"];
     $qty = $_POST["qty"];
     $price = $_POST["price"];
-    $user_id=1;
+    $user_id = $_SESSION["userid"];
     if(validate($name, $description)){
       $sql = "insert into products(user_id, catalog_id, name,description,image,qty,price) values($user_id, $catalog_id, '$name','$description','$image',$qty,$price)";
       $result = $conn->query($sql);
