@@ -2,7 +2,7 @@
    $dbhost = 'localhost';
    $dbuser = 'root';
    $dbpass = '';
-   $dbname = 'final-course';
+   $dbname = 'final_coures';
    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
    if(! $conn )
