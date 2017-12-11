@@ -4,14 +4,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vali Admin</title>
+    <title>Subas Admin</title>
     <link rel="stylesheet" type="text/css" href="../../../public/css/main.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body class="sidebar-mini fixed">
     <div class="wrapper">
       <!-- Navbar-->
-      <header class="main-header hidden-print"><a class="logo" href="index.html">Vali</a>
+      <header class="main-header hidden-print"><a class="logo" href="index.html">Subas</a>
         <nav class="navbar navbar-static-top">
           <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
           <!-- Navbar Right Menu-->
@@ -26,11 +26,22 @@
       <!-- Side-Nav-->
       <aside class="main-sidebar hidden-print">
         <section class="sidebar">
-          <div class="user-panel">
-            <div class="pull-left image"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
+          <div class="user-panel" style="height: 50px">
             <div class="pull-left info">
-              <p>John Doe</p>
-              <p class="designation">Frontend Developer</p>
+              <p><?php echo $_SESSION["nameuser"]?></p>
+              <p class="designation"><?php switch ($_SESSION["Chucvu"])
+                {
+                  case 0:
+                    echo "Admin";
+                     break;
+                  case 1:
+                    echo "Editor";
+                    break;
+                  case 2:
+                    echo "User";
+                    break;
+                }; ?>
+              </p>
             </div>
           </div>
           <!-- Menu Trái-->
@@ -68,7 +79,7 @@
               </div>
               <div class="row">
                 <label>Ảnh sản phẩm:</label>
-                <input class="form-control"  type="text" name="image">
+                <input class="form-control"  type="file" name="image">
               </div>
               <div class="row">
                 <label>Mô tả sản phẩm:</label>

@@ -4,6 +4,6 @@
 ?>
 <?php
   if (!isset($_SESSION["login"])) {
-      header("location: ".URL_SITE."/page-login.php");
+      header("location: ".URL_SITE."/index.php");
   }
 ?>

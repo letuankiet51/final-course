@@ -1,0 +1,252 @@
+a {
+  text-decoration: none;
+}
+body {
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+div {
+    display: block;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: white;
+ }
+a:link { 
+text-decoration: none; 
+} 
+a:visited { 
+text-decoration: none; 
+} 
+a:hover { 
+text-decoration: none; 
+} 
+a:active { 
+text-decoration: none; 
+}
+ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: none;
+}
+li{
+	display: inline-block;
+	list-style: none;
+}
+#top{
+	background-color: black;
+	width: 100%;
+	color: white;
+}
+#top p{
+    color: #cccccc;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 13px;
+}	
+#top-link li{
+	float: right;
+}
+#top-link li{
+	color: #cccccc;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 13px;
+}
+#top-link a:hover{
+	color: white;
+}
+#top2{
+	background-color: white;
+	color: black;
+}
+#menu a{
+    color: black;
+    padding: 15px;
+    text-align: center;
+    
+}
+#menu a:hover{
+    background: #ffbf7f;
+}
+#menu ul{
+    padding-top: 50px;
+    float: right;
+    padding-bottom: 50px;
+}
+.top-p ul{
+    float: right;
+}
+input[type=search] {
+    background:url(http://bcdonline.net/demo/expandablesearchform/search-icon.png) no-repeat 9px center;
+    border: solid 1px #fff;
+    padding: 10px;
+    width: 55px;
+    margin-top: 40px;
+    border-radius: 10em;
+    transition: all .5s;
+}
+input[type=search]:focus {
+    width: 230px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+}
+.top-p img{
+    width: 19px;
+    height: 19px;
+}
+.giohang{
+    padding: 15px;
+}
+#banner{
+    height: 400px;
+}
+.sub-top-link {
+  display: none;
+  position: relative;
+  background-color: black ;
+  padding:15px;
+}
+#top-link li {
+  position: relative;
+}
+#top-link li:hover .sub-top-link {
+  display: block;
+}
+.giohang2 {
+  display: none;
+  background-color: white  ;
+  padding:10px;
+}
+.top-p li:hover .giohang2 {
+  display: block;
+}
+.sub-top-link button{
+    color: black;
+}
+.sub-top-link input[type=email] {
+    background: #fff ;
+    border: solid 1px #ccc;
+    width: 250px;
+    color: black;
+    text-align: center;
+    border-radius: 10em;
+}
+.sub-top-link input[type=password] {
+    background: #fff ;
+    color: black;
+    border: solid 1px #ccc;
+    width: 250px;
+    text-align: center;
+    border-radius: 10em;
+}
+.sub-top-link input[type=text] {
+    background: #fff ;
+    color: black;
+    border: solid 1px #ccc;
+    width: 100px;
+    text-align: center;
+    border-radius: 10em;
+}
+#content{
+     width: 97%;
+     min-height: 400px;
+     float:left;
+}
+#right{
+     width: 3%;
+     float:right;
+}
+#upTop{
+    background: #ccc;
+    bottom: 10px;
+    color: #ffffff;
+    height: 25px;
+    text-align: center;
+    width: 3%;
+}
+#upTop:hover {
+    background: #FF7F00 none repeat scroll 0 0;
+}
+#mathang{
+    margin-left: 10px;
+}
+.col-md-3{
+    text-align: center;
+}
+.col-xs-12 button{
+    margin-bottom: 5px;
+}
+.btn:hover {
+    background:  #FF7F00 none repeat scroll 0 0;
+}
+#content .col-md-3 img{
+    width: 270px;
+    height: 300px;
+}
+#hienthitatca{
+    text-align: right;
+}
+#footer {
+	font-size:13px;
+    float: left;
+    width: 100%;
+    clear: both;
+    background: url(http://ultraviewer.net/images/footer-bg.jpg) repeat left top;
+    position: relative;
+    color: #999;
+}
+#footer .column {
+    color:#999;
+    float: left;
+    margin-right: 2.2%;
+    padding-right: 2.2%;
+    background: url(http://ultraviewer.net/images/v-line.jpg) repeat-y right top;
+}
+#footer .column a{
+	color:#999;
+}
+#footer h2 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#footer li.icon2 {
+    margin: 5px;
+    padding-left: 20px;
+    background: url(http://ultraviewer.net/images/phone-icon-footer.png) no-repeat left 5px;
+}
+#footer li.icon4 {
+    margin: 5px;
+    padding-left: 20px;
+    background: url(http://ultraviewer.net/images/email-icon-footer.png) no-repeat left 5px;
+}
+#footer .social_list li a {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 36px;
+   	background-color: #727272;
+   	padding-bottom:5px;
+}
+#footer .social_list li a:hover {
+    background-color: #FF7F00;
+}
+.btn-cam{
+	background: #ffbf7f;
+}

@@ -1,0 +1,55 @@
+HTML  CSS   Result
+Edit on 
+/*==Reset CSS==*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*==Style cơ bản cho website==*/
+body {
+  font-family: sans-serif;
+  color: black;
+}
+
+/*==Style cho top-link===*/
+#top-link ul {
+  list-style-type: none;
+  text-align: center;
+}
+#top-link li {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+#top-link a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+#top-link a:hover {
+  background: #F1F1F1;
+  color: #333;
+}
+
+/*==Dropdown Menu==*/
+.sub-top-link {
+  display: none;
+  position: absolute;
+}
+#top-link li {
+  position: relative;
+}
+#top-link li:hover .sub-top-link {
+  display: block;
+}
+.sub-top-link li {
+  margin-left: 0 !important;
+}
+
+/*==Menu cấp 3==*/
+.sub-top-link > ul {
+  display: none !mportant;
+}

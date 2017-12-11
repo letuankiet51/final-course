@@ -4,21 +4,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vali Admin</title>
+    <title>Subas Admin</title>
     <link rel="stylesheet" type="text/css" href="../../../public/css/main.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body class="sidebar-mini fixed">
     <div class="wrapper">
       <!-- Navbar-->
-      <header class="main-header hidden-print"><a class="logo" href="index.html">Vali</a>
+      <header class="main-header hidden-print"><a class="logo" href="index.html">Subas</a>
         <nav class="navbar navbar-static-top">
           <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
           <!-- Navbar Right Menu-->
           <div class="navbar-custom-menu">
             <ul class="top-nav">
               <!-- User Menu-->
-              <?php include "../User-menu.php" ?>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
+                <ul class="dropdown-menu settings-menu">
+                  <li><a href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+                  <li><a href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+                  <li><a href="../logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </nav>
@@ -26,11 +32,22 @@
       <!-- Side-Nav-->
       <aside class="main-sidebar hidden-print">
         <section class="sidebar">
-          <div class="user-panel">
-            <div class="pull-left image"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
+          <div class="user-panel" style="height: 50px">
             <div class="pull-left info">
-              <p>John Doe</p>
-              <p class="designation">Frontend Developer</p>
+              <p><?php echo $_SESSION["nameuser"]?></p>
+              <p class="designation"><?php switch ($_SESSION["Chucvu"])
+                {
+                  case 0:
+                    echo "Admin";
+                     break;
+                  case 1:
+                    echo "Editor";
+                    break;
+                  case 2:
+                    echo "User";
+                    break;
+                }; ?>
+              </p>
             </div>
           </div>
           <!-- Menu Trái-->

@@ -15,9 +15,9 @@
       $_SESSION["Chucvu"]=$row["role"];
     }
     else {
-      $_SESSION["flash"] = "failed login";
+      $_SESSION["flash"] = "Đăng nhập thất bại";
     }
 
-    header("location: index.php");
+    header("location: ../index.php");
   }
 ?>
